@@ -1,0 +1,17 @@
+{
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "n_ctx": 1024,
+  "n_embd": 768,
+  "n_head": 12,
+  "n_layer": 12,
+  "n_positions": 1024,
+  "vocab_size": 50257,
+  "num_tasks": 3,
+  "extra_dim": 204,
+  "n_embd_aug": 204,
+  "pals": true,
+  "work_with_pals": true,
+  "blend_layer": "double_linear",
+  "branch_structure": [4, 5]
+}

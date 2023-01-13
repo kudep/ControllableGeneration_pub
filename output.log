@@ -1,0 +1,41 @@
+07/25/2021 17:52:33 - INFO - __main__ -   train batch size = 512, new train batch size (after gradient accumulation) = 64
+07/25/2021 17:52:33 - INFO - __main__ -   CUDA available? False
+07/25/2021 17:52:33 - INFO - __main__ -   Input Argument Information
+07/25/2021 17:52:33 - INFO - __main__ -   model_name_or_path            /Users/marknagovicin/Library/Mobile Documents/com~apple~CloudDocs/Code/MIPT/DeepPavlov/DialoGPT/models/small
+07/25/2021 17:52:33 - INFO - __main__ -   seed                          42
+07/25/2021 17:52:33 - INFO - __main__ -   max_seq_length                128
+07/25/2021 17:52:33 - INFO - __main__ -   skip_eval                     False
+07/25/2021 17:52:33 - INFO - __main__ -   init_checkpoint               /Users/marknagovicin/Library/Mobile Documents/com~apple~CloudDocs/Code/MIPT/DeepPavlov/DialoGPT/models/small/pytorch_model.bin
+07/25/2021 17:52:33 - INFO - __main__ -   train_input_file              /Users/marknagovicin/Library/Mobile Documents/com~apple~CloudDocs/Code/MIPT/DeepPavlov/DialoGPT/data/train.128len.db
+07/25/2021 17:52:33 - INFO - __main__ -   eval_input_file               ./data/dummy_data.tsv
+07/25/2021 17:52:33 - INFO - __main__ -   continue_from                 0
+07/25/2021 17:52:33 - INFO - __main__ -   train_batch_size              64
+07/25/2021 17:52:33 - INFO - __main__ -   gradient_accumulation_steps   8
+07/25/2021 17:52:33 - INFO - __main__ -   eval_batch_size               64
+07/25/2021 17:52:33 - INFO - __main__ -   learning_rate                 1e-05
+07/25/2021 17:52:33 - INFO - __main__ -   num_optim_steps               10000
+07/25/2021 17:52:33 - INFO - __main__ -   valid_step                    5000
+07/25/2021 17:52:33 - INFO - __main__ -   warmup_proportion             0.1
+07/25/2021 17:52:33 - INFO - __main__ -   warmup_steps                  4000
+07/25/2021 17:52:33 - INFO - __main__ -   normalize_data                True
+07/25/2021 17:52:33 - INFO - __main__ -   fp16                          False
+07/25/2021 17:52:33 - INFO - __main__ -   lr_schedule                   noam
+07/25/2021 17:52:33 - INFO - __main__ -   loss_scale                    0.0
+07/25/2021 17:52:33 - INFO - __main__ -   no_token_id                   True
+07/25/2021 17:52:33 - INFO - __main__ -   output_dir                    /Users/marknagovicin/Library/Mobile Documents/com~apple~CloudDocs/Code/MIPT/DeepPavlov/DialoGPT/models/output_model
+07/25/2021 17:52:33 - INFO - __main__ -   log_dir                       None
+07/25/2021 17:52:33 - INFO - __main__ -   pbar                          True
+07/25/2021 17:52:33 - INFO - __main__ -   local_rank                    -1
+07/25/2021 17:52:33 - INFO - __main__ -   config                        None
+07/25/2021 17:52:33 - INFO - __main__ -   device                        cpu
+07/25/2021 17:52:33 - INFO - __main__ -   n_gpu                         0
+07/25/2021 17:52:33 - INFO - pytorch_pretrained_bert.tokenization_gpt2 -   loading vocabulary file /Users/marknagovicin/Library/Mobile Documents/com~apple~CloudDocs/Code/MIPT/DeepPavlov/DialoGPT/models/small/vocab.json
+07/25/2021 17:52:33 - INFO - pytorch_pretrained_bert.tokenization_gpt2 -   loading merges file /Users/marknagovicin/Library/Mobile Documents/com~apple~CloudDocs/Code/MIPT/DeepPavlov/DialoGPT/models/small/merges.txt
+07/25/2021 17:52:40 - INFO - gpt2_training.train_utils -   loading finetuned model from /Users/marknagovicin/Library/Mobile Documents/com~apple~CloudDocs/Code/MIPT/DeepPavlov/DialoGPT/models/small/pytorch_model.bin
+07/25/2021 17:52:40 - INFO - gpt2_training.train_utils -   loading transfomer only
+07/25/2021 17:52:40 - INFO - __main__ -   Number of parameter = 130218960
+training:   0%|          | 0/10000 [00:00<?, ?it/s]/Users/marknagovicin/Library/Mobile Documents/com~apple~CloudDocs/Code/MIPT/DeepPavlov/DialoGPT/lsp_model/optim.py:187: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at  /tmp/pip-req-build-r583cggo/torch/csrc/utils/python_arg_parser.cpp:1005.)
+  next_m.mul_(beta1).add_(1 - beta1, grad)

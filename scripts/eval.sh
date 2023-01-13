@@ -1,0 +1,24 @@
+python3 LSP_train.py \
+--eval_only True \
+--model_name_or_path configs/sentiment_da_model_mean_blend \
+--eval_input_file data/daily_dialog_sent_da_val.tsv \
+--init_checkpoint "models/sentiment_da_model_mean_blend/path/to/model.pkl" \
+--output_dir models/output_model \
+--seed 42 \
+--max_seq_length 128 \
+--train_batch_size 512 \
+--gradient_accumulation_steps 8 \
+--eval_batch_size 64 \
+--learning_rate 1e-5 \
+--num_optim_steps 10000 \
+--valid_step 5000 \
+--warmup_steps 4000 \
+--normalize_data true \
+--fp16 false \
+--lr_schedule noam \
+--loss_scale 0.0 \
+--no_token_id true \
+--pbar true \
+--working_pals 0 1 2 3 4 5 6 7 8 9 10 11 \
+--gen_eval_out \
+--eval_out_path sentiment_da_model_mean_blend

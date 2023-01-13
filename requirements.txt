@@ -1,0 +1,8 @@
+transformers
+ftfy
+regex
+tqdm
+pytorch
+torchvision
+pycrypto
+pytorch-pretrained-bert
